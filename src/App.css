@@ -1,0 +1,48 @@
+* {
+  background-color: black;
+  color: gold;
+}
+
+.App {
+  text-align: center;
+}
+
+h1, form {
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+input, select, button { margin: 10px; }
+
+table, th, td, thead {
+  border: 1px solid black;
+  padding: 20px;
+  text-align: center;
+}
+
+table {
+  background-color: gray;
+  color: gold;
+  width: 80%;
+}
+
+.App-header {
+  align-items: center;
+  background-color: #282c34;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  justify-content: center;
+  min-height: 100vh;
+  padding: 100px;
+}
+
+.App-link {
+  color: #61dafb;
+}
