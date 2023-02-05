@@ -87,12 +87,14 @@ export default function Table() {
         <h1>Star Wars Search Planets</h1>
       </header>
       <form>
-        Pesquise pelo Nome do Planeta:
         <input
+           placeholder='Pesquise pelo Nome do Planeta:'
+           id='name-filter'
           data-testid="name-filter"
           value={ name }
           onChange={ ({ target }) => setNameFilter(target.value) }
         />
+        <br/>
         <label htmlFor="column-filter">
           Ordenar
           <select
@@ -125,6 +127,7 @@ export default function Table() {
         <input
           type="number"
           name="filter"
+          id='value-filter'
           data-testid="value-filter"
           value={ filterByNumericValues.value }
           onChange={ ({ target }) => setValue(target.value) }
@@ -132,11 +135,12 @@ export default function Table() {
         <button
           data-testid="button-filter"
           type="button"
+          id="button-filter"
           onClick={ handleClick }
         >
           Filtrar
         </button>
-
+  
         {allFilters.map((remove, index) => (
           <div
             data-testid="filter"
@@ -154,6 +158,7 @@ export default function Table() {
         ))}
         <br />
         <select
+          id='column-sort'
           data-testid="column-sort"
           value={ orderColumn }
           onChange={ ({ target }) => setOrderColumn(target.value) }
@@ -165,6 +170,7 @@ export default function Table() {
           <option value="surface_water">surface_water</option>
         </select>
         <input
+          id='asc'
           type="radio"
           name="ordem"
           value="ASC"
@@ -173,6 +179,7 @@ export default function Table() {
         />
         Ascendente
         <input
+          id='desc'
           type="radio"
           name="ordem"
           value="DESC"
@@ -181,13 +188,21 @@ export default function Table() {
         />
         Descendente
         <button
+          id='desc'
           type="button"
           data-testid="column-sort-button"
           onClick={ handleOrder }
         >
+
           Ordenar
         </button>
-        <br />
+        <button
+        id='remove'
+        data-testid="button-remove-filters"
+        type="button"
+        onClick={ removeFilters }
+      >  Remover Filtros
+      </button>
       </form>
       <table>
         <TableHeader />
@@ -214,14 +229,7 @@ export default function Table() {
             </tbody>
           ))}
       </table>
-      <button
-        data-testid="button-remove-filters"
-        type="button"
-        onClick={ removeFilters }
 
-      >
-        Remover Filtros
-      </button>
     </div>
   );
 }

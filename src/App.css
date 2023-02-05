@@ -1,13 +1,15 @@
 * {
   background-color: black;
   color: gold;
+  ont-family: "Epilogue";
 }
 
 .App {
   text-align: center;
 }
 
-h1, form {
+h1,
+form {
   font-size: 20px;
   padding: 20px;
   text-align: center;
@@ -17,32 +19,69 @@ h1 {
   font-size: 50px;
 }
 
-input, select, button { margin: 10px; }
+input,
+select,
+button {
+  margin: 10px;
+}
 
-table, th, td, thead {
+table,
+th,
+td,
+thead {
   border: 1px solid black;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
 }
 
 table {
+  width: 1212px;
+  height: 403px;
+  left: 38px;
+  top: 1004px;
   background-color: gray;
   color: gold;
-  width: 80%;
+  width: 60%;
 }
 
-.App-header {
-  align-items: center;
-  background-color: #282c34;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  font-size: calc(10px + 2vmin);
-  justify-content: center;
-  min-height: 100vh;
-  padding: 100px;
+button {
+  margin-top:20px;
+  box-sizing: border-box;
+  width: 80px;
+  height: 50px;
+  left: 592px;
+  top: 856px;
+  border: 1px solid #fae60a;
+  border-radius: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+#name-filter {
+  text-align: center;
+  display:inline;
+  box-sizing: border-box;
+  width: 671px;
+  height: 42px;
+  left: 302px;
+  top: 761px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+}
+
+#column-sort, #comparison-filter , #column-filter, #value-filter{
+  display:inline;
+  box-sizing: border-box;
+  width: 100px;
+  height: 30px;
+  left: 592px;
+  top: 856px;
+  border: 1px solid #fae60a;
+  border-radius: 5px;
+}
+
+#remove {
+  box-sizing: border-box;
+  width: 80px;
+  height: 60px;
+  border: 1px solid #fae60a;
+  border-radius: 10px;
 }
