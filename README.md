@@ -1,8 +1,7 @@
 <div align="center">
    <h1> Bem vinde ao repositório do Star Wars Planets Search!</h1><br>
-   <p> <strong> Espero que você aproveite, e que a força esteja com você!</strong></p><br>
-   
-    <p> Essa aplicação é  uma lista com filtros de planetas do universo de Star Wars usando React, Context API e Hooks para controlar os estados globais.
+   <p> <strong> Espero que você aproveite, e que a força esteja com você!</strong></p><br>  
+   <p> Essa aplicação é  uma lista com filtros de planetas do universo de Star Wars usando React, Context API e Hooks para controlar os estados globais.
  desenvolvido no modulo de Front-End da Trybe.</p>
   <h2> Nessa aplicação, o usuario pode: </h2>
   <p> Usar um filtro de texto para a tabela, procurando pelo nome do planeta.</p>
